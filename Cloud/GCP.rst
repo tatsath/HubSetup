@@ -97,6 +97,10 @@ Create the file jupyterhub-config.py under /opt/tljh/config/jupyterhub_config.d 
 		c.JupyterHub.tornado_settings = { 'headers': { 'Content-Security-Policy': "frame-ancestors * self *"} }
 
 
+sudo tljh-config reload
+
+
+
 -  Step 4 : Embed the jupyter lab inside the FinAILab
 
 		.. note::
