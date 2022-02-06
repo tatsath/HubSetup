@@ -66,12 +66,17 @@ Below are the details of setting FinAI-Lab on cloud platform
 		sudo tljh-config add-item https.letsencrypt.domains jhub3.finailab.com
 
 - Step 3: Create a file named jupyter_notebook_config.py in a specific location say /home/shared_config/
-jupyter notebook --generate-config
+-- pip3 install jupyterhub notebook
+--/home/shared_config/
+--jupyter notebook --generate-config
+--vi jupyter_notebook_config.py
+Add : 		c.NotebookApp.tornado_settings={'headers': {'Content-Security-Policy': "frame-ancestors * 'self' "}}
+chmod -R 755 /home/shared_config/jupyter_notebook_config.py
 
 		https://github.com/jupyterhub/the-littlest-jupyterhub/issues/312
 		Add : 		c.NotebookApp.tornado_settings={'headers': {'Content-Security-Policy': "frame-ancestors * 'self' "}}
 		change the permission of the file using the following code:
-		chmod -R 755 /home/shared_config/jupyter_notebook_config.py
+
 
 - Step 3: Setting in the jupyterhub_config
 
