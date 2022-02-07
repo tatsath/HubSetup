@@ -7,10 +7,9 @@ Using local machine
 Alternative 1
 -----------------------------
 
--  Step 1 : Download the `config file <https://github.com/tatsath/finailab_install/blob/main/jupyter_notebook_config.py>`_
--  Step 2 : Run "jupyter lab --config=<Folder where file is downloaded>/jupyter_notebook_config.py"
--  Step 3 : Launch the jupyter lab from Anaconda
--  Step 4 : Embed the jupyter lab inside the FinAILab
+-  Step 1 : Run "jupyter lab --config=https://github.com/tatsath/finailab_install/blob/main/jupyter_notebook_config.py"
+-  Step 2 : Launch the jupyter lab from Anaconda
+-  Step 3 : Embed the jupyter lab inside the FinAILab
 
 .. note::
 
