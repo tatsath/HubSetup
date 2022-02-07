@@ -7,7 +7,8 @@ Using local machine
 Alternative 1
 -----------------------------
 -  Step 1 : install jupyerter lab with "pip install jupyterlab"
--  Step 2 : Once installed run jupyter lab with "jupyter lab --config=https://github.com/tatsath/finailab_install/blob/main/jupyter_notebook_config.py" in anaconda
+-  Step 2 : Download the config file here https://github.com/tatsath/finailab_install/blob/main/jupyter_notebook_config.py
+-  Step 3 : Run "jupyter lab --config=<download folder>/jupyter_notebook_config.py" in anaconda
 -  Step 3 : Embed the jupyter lab inside the FinAILab platform tab
 
 .. note::
