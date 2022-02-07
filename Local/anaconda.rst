@@ -8,8 +8,7 @@ Alternative 1
 -----------------------------
 
 -  Step 1 : Run "jupyter lab --config=https://github.com/tatsath/finailab_install/blob/main/jupyter_notebook_config.py"
--  Step 2 : Launch the jupyter lab from Anaconda
--  Step 3 : Embed the jupyter lab inside the FinAILab
+-  Step 2 : Embed the jupyter lab inside the FinAILab
 
 .. note::
 
