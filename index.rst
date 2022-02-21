@@ -18,6 +18,12 @@ Set up FinAILab platform using resources from local machine or cloud
   Cloud/GCP
 
 
+.. toctree::
+  :maxdepth: 1
+  :caption: Cloud
+
+  Cloud/Optimization
+
 
 .. Contributing
 .. ------------
