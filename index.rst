@@ -22,14 +22,7 @@ Set up FinAILab platform using resources from local machine or cloud
   :caption: Cost Optimization
 
   Cloud/Cost  
-  
 
-
-.. toctree::
-  :maxdepth: 1
-  :caption: Cloud
-
-  Cloud/Optimization
 
 
 .. Contributing
