@@ -26,7 +26,7 @@ Alternative 2
 
 .. code:: ipython3
 
-    c.NotebookApp.port = 8888
+    c.NotebookApp.port = 9000
     c.NotebookApp.token = ''
 
     ## The IP address the notebook server will listen on.
@@ -45,4 +45,4 @@ Alternative 2
 
 .. note::
 
-   Open "new platform" and set up a name and the hub address. The address may be something like "http://localhost:8888/lab"
+   Open "new platform" and set up a name and the hub address. The address may be something like "http://localhost:9000/lab"
