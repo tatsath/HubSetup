@@ -9,7 +9,7 @@ Cost Computation
 
 - Cost calculators
 
-.. image:: Cloud/HubCost.PNG
+.. image:: HubCost.PNG
   :width: 400
   :alt: Alternative text
 
