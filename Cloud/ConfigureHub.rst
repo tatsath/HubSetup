@@ -1,61 +1,11 @@
-.. _GCP:
+.. _ConfigureHub:
 
 ======================================
-Cloud Platform
+1. Configure hub
 ======================================
 
-Cost Computation
-----------------
 
-- Cost calculators
-
-.. image:: HubCost.PNG
-  :width: 800
-  :alt: Alternative text
-
-- Cost of littlest Jupyter hub (tljh)
-
-In order to describe the costs of each option accurately, there are three dimensions of the set-up that must be considered: the allotment of memory/RAM, CPU usage, and disk space that each user would need. In that way, varying class sizes and needs differentiate the amount of resources given to each cost dimension. Four major options are outlined in the following chart to determine the allocation of resources across those three types: small classes (~30-50 students), average-sized classes (~80-100 students), and large classes (~100-400+). The following formulas for each of these three dimensions are widely applicable across different scenarios for The Littlest JupyterHub (TLJH):
-
-1. Recommended Memory = (Maximum Concurrent Users x Maximum Memory per User) + 128 MB
-2. Recommended vCPUs = (Maximum Concurrent Users x Maximum CPU Usage per User) + 20%
-3. Recommended Disk Size = (Total Users x Maximum Disk Usage per User) + 2 GB
-
-- Maximum amount of concurrent users should be approximately 40-60% of the total users at any given point
-- 1 GB typically serves as maximum memory per user, with 128 MB being overhead for TLJH and related services
-- Based on class sizes: 16 GB for 30 students, 64 GB for 100 students, and 256 GB for over 400 students
-- Most memory, vCPU, and disk installations come hand-in-hand, so memory calculation can be used to determine rest of setup ⇒ 4 vCPUS and 32 GB disk space for small classes, 16 vCPUS and 128 GB disk space for average-sized classes, and 64 vCPUS and 512 GB disk space for large classes
-
-.. image:: HubCost1.PNG
-  :width: 800
-  :alt: Alternative text
-
-- Cost of Kubernetes based cloud
-
-In order to describe the costs of each option accurately, there are three dimensions of the set-up that must be considered: the allotment of memory/RAM, CPU usage, and disk space that each user would need. In that way, varying class sizes and needs differentiate the amount of resources given to each cost dimension. Three major options are outlined in the following chart to determine the allocation of resources across those three types: small classes (~30-50 students), average-sized classes (~80-100 students), and large classes (~100+). Autoscaling is a key feature of Kubernetes that is the primary cost saver here - a Kubernetes cluster scales down at night and during weekends, scaling up on demand.
-
-The calculations here are based on Berkeley’s JupyterHub cost estimates, which can be viewed here: https://github.com/data-8/jupyterhub-k8s/blob/master/docs/cost-estimation/gce_budgeting.ipynb(link is external)
-
-The following formulas for each of these three dimensions are widely applicable across different scenarios for JupyterHub for Kubernetes:
-
-1. Number of Active Pods = Total Users / 4
-
-2. Recommended Memory = 1 GB x Number of Active Pods
-
-- Number of active pods used by classes, on average, fall somewhere between 1/3rd and 1/6th of total users ⇒ dividing by 4 produces a good estimate for this number
-
-- Memory allocated to each pod is 1 GB, multiply by number of active pods to get  overall memory allocation
-
-- Based on class sizes: 8 GB for 30 students, 32 GB for 100 students, and 128 GB for over 400 students
-
-- Since most memory, vCPU, and disk installations come hand-in-hand, memory calculation can be used to determine rest of setup ⇒ 2 vCPUS and 16 GB disk space for small classes, 8 vCPUS and 64 GB disk space for average-sized classes, and 32 vCPUS and 256 GB disk space for large classes
-
-.. image:: HubCost2.PNG
-  :width: 800
-  :alt: Alternative text
-
-
-Setting up the cloud - The littlest Jupyter hub (tljh)
+Configure on The littlest Jupyter hub (tljh)
 ----------------
 
 Below are the details of setting FinAI-Lab on cloud platform
@@ -107,14 +57,7 @@ sudo tljh-config reload
 
 
 
--  Step 4 : Embed the jupyter lab inside the FinAILab
-
-.. note::
-
-   Open "new platform" and set up a name and the hub address. The address may be something like "http://localhost:8888/lab"
-
-
-Setting up the cloud - On Kubernetes based cloud
+Configure on Kubernetes based cloud
 ----------------
 
 Below are the details of setting FinAI-Lab on cloud platform

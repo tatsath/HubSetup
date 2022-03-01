@@ -1,14 +1,8 @@
-.. _Optimization:
+.. _HubMgmt:
 
 ======================================
-Cost Optimization
+4. Manage Jupyter hub
 ======================================
-
-Cost calculators
-----------------
-- Calculate based on number of users
-- Calculate based on CPU, memory and GPU requirements.
-
 
 Resource optimization
 ----------------
@@ -32,6 +26,7 @@ Adding and modifying files
 - nbgitpuller
 
 
-Access or setup
+setting https
 ----------------
- -
+- repo2docker
+- nbgitpuller
