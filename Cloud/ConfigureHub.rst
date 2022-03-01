@@ -12,9 +12,6 @@ Configure littlest Jupyter hub (tljh)
 ======================================
 
 
-Configure on The littlest Jupyter hub (tljh)
-----------------
-
 Below are the details of setting FinAI-Lab on cloud platform
 
 - Step 1: Creating hub on any cloud platform (https://tljh.jupyter.org/en/latest/)

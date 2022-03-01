@@ -8,7 +8,7 @@ Embed in FinAILab
 Open "new platform" and set up a name and the hub address. The address may be something like "http://localhost:8888/lab"
 
 .. image:: FinAILab.PNG
-  :width: 800
+  :width: 600
   :alt: Alternative text
 
 
