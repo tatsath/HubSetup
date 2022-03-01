@@ -5,6 +5,7 @@
 ======================================
 
 Choosing the righ infrastructure is done in 2 steps:
+
 - Choose the right hub type
 - Choose the right cloud service
 
