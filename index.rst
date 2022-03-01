@@ -15,6 +15,14 @@ The FinAILab platform setup on cloud for individuals/teams can be done in three 
 
   Cloud/ChooseInfra
 
+
+.. toctree::
+  :maxdepth: 1
+  :caption: 2. Configure jupyterhub
+
+  Cloud/ConfigureHub
+
+
 .. toctree::
   :maxdepth: 1
   :caption: 2. Configure jupyterhub
