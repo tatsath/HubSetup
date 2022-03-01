@@ -1,16 +1,13 @@
 .. _Choose Infra:
 
-======================================
-1. Choose infrastructure
-======================================
-
 Choosing the righ infrastructure is done in 2 steps:
 
 - Choose the right hub type
 - Choose the right cloud service
 
-Cost hub Type
-----------------
+======================================
+Choose the right hub type
+======================================
 
 - Cost calculators
 
@@ -60,14 +57,16 @@ The following formulas for each of these three dimensions are widely applicable 
   :alt: Alternative text
 
 
-Choose Cloud
-----------------
+======================================
+Choose the right cloud service type
+======================================
 
 Use FinAILab's cloud cost calculator here:
 
 
+======================================
 FAQs
------------------
+======================================
 
 - Should I deploy on my hardware or in the cloud?
 

@@ -1,7 +1,14 @@
 .. _ConfigureHub:
 
+
+There are two hubs that can be configured
+
+- littlest Jupyter hub (tljh)
+- kubernetes based hub
+
+
 ======================================
-2. Configure hub
+Configure littlest Jupyter hub (tljh)
 ======================================
 
 
@@ -56,9 +63,10 @@ Create the file jupyterhub-config.py under /opt/tljh/config/jupyterhub_config.d 
 sudo tljh-config reload
 
 
+======================================
+Kubernetes-based hub
+======================================
 
-Configure on Kubernetes based cloud
-----------------
 
 Below are the details of setting FinAI-Lab on cloud platform
 

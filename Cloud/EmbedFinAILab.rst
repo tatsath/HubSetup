@@ -1,7 +1,7 @@
 .. _EmbedFinAILab:
 
 ======================================
-3. Embed in FinAILab
+Embed in FinAILab
 ======================================
 
 
