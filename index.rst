@@ -6,32 +6,28 @@ The FinAILab platform setup on cloud for individuals/teams can be done in three 
 - Step 1 : Choose infrastructure
 - Step 2 : Configure jupyterhub
 - Step 3 : Embed in FinAILab Platform
-- Step 4 ( Optional) : Jupyterhub Administration
+- Step 4 ( Optional ) : Jupyterhub Administration
 
 
 .. toctree::
   :maxdepth: 1
-  :caption: 1. Choose Infrastructure
 
   Cloud/ChooseInfra
 
 .. toctree::
   :maxdepth: 1
-  :caption: 2. Configure jupyterhub
 
  Cloud/ConfigureHub
 
 .. toctree::
  :maxdepth: 1
- :caption: 3. Embed in FinAILab Platform
 
  Cloud/EmbedFinAILab
 
 .. toctree::
   :maxdepth: 1
-  :caption: 4. Jupyterhub Administration
 
-  Cloud/Optimization
+  Cloud/HubMgmt
 
 
 .. Contributing
