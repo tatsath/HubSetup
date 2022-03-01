@@ -3,8 +3,14 @@
 Using local machine
 ===============
 
+Run FinAILab's platform on your local machine in 3 simple steps.
 
-Alternative 1
+-  Step 1 : pip install finailab
+-  Step 2 : python -m finailab
+-  Step 3 : Press "click here" button on the Finailab's set up platform screen
+
+
+Alternative embedding
 -----------------------------
 -  Step 1 : install jupyerter lab with "pip install jupyterlab"
 -  Step 2 : Download the config file here https://github.com/tatsath/finailab_install/blob/main/jupyter_notebook_config.py
@@ -17,7 +23,7 @@ Alternative 1
 
 
 
-Alternative 2
+More detailed embedding
 -----------------------------
 
 -  Step1 : Search for jupyter_notebook_config.py on your local machine
