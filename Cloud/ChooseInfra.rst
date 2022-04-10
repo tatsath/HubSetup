@@ -63,7 +63,7 @@ Choose the right cloud service type
 
 Use FinAILab's cloud cost calculator here:
 
-You can check the price of RESOURCES by selecting CPU count, Memory in GB, Storage
+You can check the price of RESOURCES by selecting CPU count, Memory in GB, Storage here: 
 .. image:: 1.jpeg
 
 You can check the price of RESOURCES by selecting GPU if you need it.
