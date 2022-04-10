@@ -63,6 +63,11 @@ Choose the right cloud service type
 
 Use FinAILab's cloud cost calculator here:
 
+.. image:: 1.jpeg
+.. image:: 2.jpeg
+.. image:: 3.jpeg
+.. image:: 4.jpeg
+
 
 ======================================
 FAQs
