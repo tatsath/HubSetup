@@ -124,7 +124,7 @@ Kubernetes-based hub on AWS Cloud
 ======================================
 
 Go to IAM Roles page on AWS Console :
-
+.. image:: 
 
 Create the role with following permissions by searching one by one :
 --> AmazonEC2FullAccess
@@ -139,7 +139,6 @@ To install kops:--- https://github.com/kubernetes/kops/blob/HEAD/docs/install.md
 # curl -Lo kops https://github.com/kubernetes/kops/releases/download/$(curl -s https://api.github.com/repos/kubernetes/kops/releases/latest | grep tag_name | cut -d '"' -f 4)/kops-linux-amd64
 # chmod +x ./kops
 # sudo mv ./kops /usr/local/bin/
-
 
 To install kubectl :---
 # curl -Lo kubectl https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl
@@ -206,7 +205,7 @@ SETTING HTTPS
 ================
 
 edit the DNS record like this way →
-
+.. image:: 
 
 # cat config1.yaml
 proxy:
@@ -221,7 +220,11 @@ proxy:
 # helm list --all
 # helm upgrade --cleanup-on-fail   --install jupyterhub-1650178784 jupyterhub/jupyterhub   --namespace kube-system   --create-namespace   --version=0.11.1 --values config1.yaml 
 
-TASK 12 - GITHUB LOGIN BY UPDATING CONFIG FILE
+=====================================
+GITHUB LOGIN BY UPDATING CONFIG FILE
+=====================================
+
+.. image:: 
 
 # cat  /opt/tljh/config/config1.yml
 proxy:
