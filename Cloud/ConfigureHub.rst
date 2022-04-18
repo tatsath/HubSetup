@@ -268,6 +268,7 @@ proxy:
    secretToken: d94132516bc6105f01b4c09f7d68c942e22649a2525cc5da4e1dab05b16fbb70
    
 # helm list --all
+
 # helm upgrade --cleanup-on-fail   --install jupyterhub-1650178784 jupyterhub/jupyterhub   --namespace kube-system   --create-namespace   --version=0.11.1 --values config1.yaml 
 
 =====================================
@@ -297,7 +298,6 @@ hub:
    
    
 # helm list --all   
-
 
 # helm upgrade --cleanup-on-fail   --install jupyterhub-1650178784 jupyterhub/jupyterhub   --namespace kube-system   --create-namespace   --version=0.11.1 --values config1.yaml 
 
