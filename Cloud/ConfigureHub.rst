@@ -123,40 +123,73 @@ sudo tljh-config reload
 Kubernetes-based hub on AWS Cloud 
 ======================================
 
-Go to IAM Roles page on AWS Console :
-.. image:: 
+Go to IAM Roles page on AWS Console : 
+
+Follow the steps below to create the Role -->
+
+.. image:: j2.jpeg
+
+.. image:: j3.jpeg
 
 Create the role with following permissions by searching one by one :
+
 --> AmazonEC2FullAccess
+
 --> IAMFullAccess
+
 --> AmazonS3FullAccess
+
 --> AmazonVPCFullAccess
+
 --> Route53FullAccess
+
+
+.. image:: j4.jpeg
+
+.. image:: j5.jpeg
 
 Create the new instance & login to its terminal 
 To install kops:--- https://github.com/kubernetes/kops/blob/HEAD/docs/install.md
+
 (use commands for linux, not windows or MacOS)
+
 # curl -Lo kops https://github.com/kubernetes/kops/releases/download/$(curl -s https://api.github.com/repos/kubernetes/kops/releases/latest | grep tag_name | cut -d '"' -f 4)/kops-linux-amd64
+
 # chmod +x ./kops
+
 # sudo mv ./kops /usr/local/bin/
 
 To install kubectl :---
 # curl -Lo kubectl https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl
+
 # chmod +x ./kubectl
+
 # sudo mv ./kubectl /usr/local/bin/kubectl
 
-pip install awscli 
+#pip install awscli 
+
 Create the AWS Secret Key & access key
+
 # aws configure
+
 Enter the credentials here & use default region us-west-1
 
 # export NAME=jphub.k8s.local
 
 Create the S3 bucket with a unique name:
+
+.. image:: j6.jpeg
+
+Give the public access like this way & click on create:
+
+.. image:: j7.jpeg
+
 # export KOPS_STATE_STORE=s3://jphub
+
 # export REGION=`curl -s http://169.254.169.254/latest/dynamic/instance-identity/document|grep region|awk -F\" '{print $4}'`
 
 # export ZONES=$(aws ec2 describe-availability-zones --region $REGION | grep ZoneName | awk '{print $2}' | tr -d '"')
+
 (if this command show error replace $REGION with the region you are using)
 
 
@@ -171,12 +204,17 @@ Create the S3 bucket with a unique name:
 (To check number of nodes)
 
 # kubectl --namespace kube-system get pods
+
 # openssl rand -hex 128 >weave-passwd
+
 # kubectl create secret -n kube-system generic weave-passwd --from-file=./weave-passwd
+
 # kubectl patch --namespace=kube-system daemonset/weave-net --type json -p '[ { "op": "add", "path": "/spec/template/spec/containers/0/env/0", "value": { "name": "WEAVE_PASSWORD", "valueFrom": { "secretKeyRef": { "key": "weave-passwd", "name": "weave-passwd" } } } } ]’
+
 #  kubectl --namespace kube-system get pods
 
 (Wait for the weave pods to terminate & start a new pod)
+
 copy <pod_name> from here
 
 # kubectl exec -n kube-system weave-net-<pod_name> -c weave -- /home/weave/weave --local status
@@ -186,26 +224,38 @@ HELM SETUP
 =================
 
 # wget https://get.helm.sh/helm-v3.4.1-linux-amd64.tar.gz
+
 # tar xvf helm-v3.4.1-linux-amd64.tar.gz
+
 # sudo mv linux-amd64/helm /usr/local/bin
+
 #  rm helm-v3.4.1-linux-amd64.tar.gz
+
 #  rm -rf linux-amd64
+
 # helm version
+
 #cd /opt/tljh/config
+
 #helm repo add jupyterhub https://jupyterhub.github.io/helm-chart/
+
 #helm repo update
+
 #helm install jupyterhub/jupyterhub --version 1.2.0 --generate-name  --namespace kube-system
+
 #  kubectl get service --namespace kube-system
 
-copy paste the  external IP for the proxy-public service in to a browser
-& then create the dummy credentials
+copy paste the  external IP for the proxy-public service in to a browser & then create the dummy credentials
 
-================
-SETTING HTTPS
-================
+=============================
+SETTING HTTPS VIA CONFIG FILE
+=============================
 
 edit the DNS record like this way →
-.. image:: 
+
+.. image:: j8.jpeg
+
+Take care of the indentations in the .yml file
 
 # cat config1.yaml
 proxy:
