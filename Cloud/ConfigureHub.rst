@@ -224,7 +224,7 @@ proxy:
 GITHUB LOGIN BY UPDATING CONFIG FILE
 =====================================
 
-.. image:: 
+.. image:: j1.jpeg
 
 # cat  /opt/tljh/config/config1.yml
 proxy:
@@ -245,7 +245,8 @@ hub:
     JupyterHub:
       authenticator_class: github
    
-# helm list --all      
+# helm list --all   
+
 # helm upgrade --cleanup-on-fail   --install jupyterhub-1650178784 jupyterhub/jupyterhub   --namespace kube-system   --create-namespace   --version=0.11.1 --values config1.yaml 
 
 =======================================
@@ -253,9 +254,13 @@ TO INCREASE OR EDIT THE INSTANCE GROUPS
 =======================================
 
 # kops get instancegroups
+
 # kops edit instancegroups nodes-us-west-1c
+
 (Make the changes in the file and save & exit)
+
 # kops update cluster --name kops.jhub2.finailab.com --yes --admin
+
 # kops rolling-update cluster --yes
 
 
