@@ -295,7 +295,9 @@ hub:
     JupyterHub:
       authenticator_class: github
    
+   
 # helm list --all   
+
 
 # helm upgrade --cleanup-on-fail   --install jupyterhub-1650178784 jupyterhub/jupyterhub   --namespace kube-system   --create-namespace   --version=0.11.1 --values config1.yaml 
 
