@@ -219,9 +219,7 @@ copy <pod_name> from here
 
 # kubectl exec -n kube-system weave-net-<pod_name> -c weave -- /home/weave/weave --local status
 
-=================
 HELM SETUP
-=================
 
 # wget https://get.helm.sh/helm-v3.4.1-linux-amd64.tar.gz
 
@@ -271,9 +269,7 @@ proxy:
 
 # helm upgrade --cleanup-on-fail   --install jupyterhub-1650178784 jupyterhub/jupyterhub   --namespace kube-system   --create-namespace   --version=0.11.1 --values config1.yaml 
 
-=====================================
 GitHub login on K8S based hub
-=====================================
 
 .. image:: j1.jpeg
 
@@ -301,9 +297,7 @@ hub:
 
 # helm upgrade --cleanup-on-fail   --install jupyterhub-1650178784 jupyterhub/jupyterhub   --namespace kube-system   --create-namespace   --version=0.11.1 --values config1.yaml 
 
-=======================================
 To increase or edit the instance groups
-=======================================
 
 # kops get instancegroups
 
