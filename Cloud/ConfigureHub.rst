@@ -247,9 +247,9 @@ HELM SETUP
 
 copy paste the  external IP for the proxy-public service in to a browser & then create the dummy credentials
 
-=============================
-SETTING HTTPS VIA CONFIG FILE
-=============================
+===============================
+Setting Http on the Hub for K8S
+===============================
 
 edit the DNS record like this way →
 
@@ -272,7 +272,7 @@ proxy:
 # helm upgrade --cleanup-on-fail   --install jupyterhub-1650178784 jupyterhub/jupyterhub   --namespace kube-system   --create-namespace   --version=0.11.1 --values config1.yaml 
 
 =====================================
-GITHUB LOGIN BY UPDATING CONFIG FILE
+GitHub login on K8S based hub
 =====================================
 
 .. image:: j1.jpeg
@@ -302,7 +302,7 @@ hub:
 # helm upgrade --cleanup-on-fail   --install jupyterhub-1650178784 jupyterhub/jupyterhub   --namespace kube-system   --create-namespace   --version=0.11.1 --values config1.yaml 
 
 =======================================
-TO INCREASE OR EDIT THE INSTANCE GROUPS
+To increase or edit the instance groups
 =======================================
 
 # kops get instancegroups
